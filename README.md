@@ -4,13 +4,13 @@
 
 ###### Rotas
 
-**get** _/pessoa/idade/{dd-mm-aaaa}_ : retorna a idade da pessoa. 
+**get** _/pessoa/idade/{dd-mm-aaaa}_ : **200** retorna a idade da pessoa. **400:** Bad request.
 
-**get** _/pessoa/{id}_ : retorna os dados da pessoa (id e data de nascimento).
+**get** _/pessoa/{id}_ : **200** retorna os dados da pessoa (id e data de nascimento). **404** Not found.
 
-**get** _/pessoa_ : retorna lista de todas as pessoas.
+**get** _/pessoa_ : **200** retorna lista de todas as pessoas.
 
-**post** _/pessoa_ : adiciona uma pessoa. Para este simples projeto e retornado os dados da pessoa cadastrada.
+**post** _/pessoa_ : **200** adiciona uma pessoa. Para este simples projeto e retornado os dados da pessoa cadastrada. **400** Bad Request.
 
 
 ###### Usar o repositorio
